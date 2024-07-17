@@ -15,6 +15,7 @@ class MovieController extends Controller
 
 
         // Li rendo come voglio
+        //SELECT * FROM movies
         $movies = Movie::all();
 
 
