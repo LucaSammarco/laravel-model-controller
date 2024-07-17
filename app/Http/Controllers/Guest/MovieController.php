@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
+use App\Models\Movie;
 use Illuminate\Http\Request;
 
 class MovieController extends Controller
@@ -14,7 +15,7 @@ class MovieController extends Controller
 
 
         // Li rendo come voglio
-        $movies = [];
+        $movies = Movie::all();
 
 
         return view('movies.index', compact('movies'));

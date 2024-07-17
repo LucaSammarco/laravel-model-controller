@@ -7,5 +7,16 @@
 @section('main-content')
     <h1>Welcome to Movies</h1>
 
-    {{-- <img src="{{ Vite::asset('resources/img/gatto-soriano.jpeg')}}" alt="gatto"> --}}
+   <ul>
+         @foreach($movies as $movie)
+              <li>
+                <p>
+                    {{ $movie->title; }}
+                </p>
+              </li>
+         @endforeach
+
+   </ul>
+
+
 @endsection
